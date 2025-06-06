@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/estilo.css">
+  
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>LoopStack</title>
+</head>
+
+<body>
+    <header id="header">
+
+        <button onclick="togglesidebar()" class="botao_barrinha" id="botao_barrinha">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+        </button>
+
+        <br>
+
+        <img  src="./src/imagens/logo + nome embaixo.png" alt="">
+
+
+        <nav id="navegacao">
+
+
+            </button>
+            <button onclick="togglesidebar()" class="botao_barrinha2" id="botao_barrinha">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </button>
+
+            <button onclick="ModoEScuro()" class="botaoTrocaFundo" id="claro">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-star"
+                    viewBox="0 0 16 16" :>
+                    <path
+                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                </svg>
+
+
+
+            </button>
+
+            <button onclick="ModoClaro()" class="botao_estrela" id="colorButton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-star"
+                    viewBox="0 0 16 16" :>
+                    <path
+                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                </svg>
+            </button>
+            <br>
+            <a href="#SobreNos">Sobre nós</a>
+            <a href="#linkLocalizacao">Localização</a>
+            <a href="#linkPerguntastasFrequentes">FAQ</a>
+            <a href="#conteudo_footer">Fale conosco</a>
+            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                    class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                </svg></a>
+        </nav>
+
+    </header>
+    <button id="botaoTopo" onclick="voltarAoTopo()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+            fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
+        </svg></button>
+    <h1 id="SobreNos">SOBRE NÓS</h1>
+    <div data-aos="fade-right" data-aos-duration="1000" class="texto" class="formatacao" id="textoSobreNos">
+        <p>A LoopStackSolutions é especializada em análise e desenvolvimento de
+            sistemas, oferecendo soluções personalizadas, inovadoras e de alta
+            qualidade. Nossa missão é entender as necessidades dos clientes e
+            entregar sistemas seguros e eficientes, promovendo a transformação
+            digital e o crescimento dos negócios.
+        </p>
+    </div>
+    <br>
+    <h1 id="linkLocalizacao">LOCALIZAÇÃO</h1>
+    <div data-aos="fade-left" data-aos-duration="1000" class="textoLocalizazao" class="formatacao"
+        id="textoLocalização1">
+        Rua Guaipá , 678 - Vila Leopodina , São Paulo - SP
+    </div>
+    <div data-aos="fade-left" data-aos-duration="1000"class="imagemBG">
+        <img src="./src/imagens/ImagemSuperiorDoBG.jpg" alt="">
+    </div>
+    <br>
+    <h1>CLIENTES</h1>
+
+    <div class="containerClientes">
+        <div data-aos="flip-down" data-aos-duration="1000" class="imgclientes">
+            <img src="./src/imagens/logo + nomeVetorizada.svg" alt="" >
+            <br>
+            <p class="textocliente"  id="textoCliente">
+                A VegaLume é um restaurante vegano inovador, que se destaca pela oferta de
+                pratos 100% vegetais, focando na
+                sustentabilidade e no bem-estar dos seus
+                clientes. Trabalhamos com eles para criar
+                soluções digitais que aprimoram a
+                experiência do cliente, como uma
+                plataforma de pedidos online eficiente, um
+                sistema de gestão de estoque integrado e
+                um site moderno, que ajudam a otimizar
+                suas operações e a fortalecer a presença
+                digital.
+            </p>
+        </div>
+        <div data-aos="flip-down" data-aos-duration="1000" class=" solo" >
+            <img src="./src/imagens/cakechase logo simple light.png" alt="">
+            <br>
+            <p class="textocliente"  id="textoCliente2"> A Cake Chase é uma fábrica de bolos que se
+                destaca pela
+                produção artesanal e de alta qualidade, oferecendo uma
+                ampla variedade de bolos frescos e saborosos. Em parceria
+                com a empresa, desenvolvemos soluções digitais para
+                otimizar suas operações, como um sistema de pedidos
+                online, controle de estoque automatizado e um site
+                moderno que facilita a interação com os clientes. Essas
+                ferramentas permitem à Cake Chase aprimorar
+                sua eficiência operacional e melhorar a experiência de
+                seus consumidores.
+            </p>
+        </div>
+        <br>
+        <div data-aos="flip-down" data-aos-duration="1000" class="imgclientes">
+          
+            <br>
+            <p class="textocliente" class="formatacao" id="textoCliente3"> 
+               
+        </div>
+        <div data-aos="flip-down" data-aos-duration="1000" class="imgclientes">
+            
+            <Br>
+            <p class="textocliente" class="formatacao" id="textoCliente4"> 
+         
+        </div>
+        </div>
+        <h1 class=" textotec">ESPECIALIDADES TECNOLÓGICAS</h1><div data-aos="zoom-in-up" data-aos-duration="1000"  class="EspecialidadesTec">
+        <div class="imgEspecialidadesTec">
+            <img src="./src/imagens/EspecilidadesEmAnalisedeSistemas.jpg" alt="">
+            <br>
+            <p class="textoEspecialidadesTec" id="textoEspecialidadesTecnologicas">
+                
+                Especialistas em Analise e Desenvolvimento
+                de Sistemas.</p>
+        </div>
+
+        <div data-aos="zoom-in-dow" data-aos-duration="1000" class="imgEspecialidadesTec">
+            <img src="./src/imagens/TelaDeCodigo.jpg" alt="">
+            <br>
+            <p class="textoEspecialidadesTec"  id="textoEspecialidadesTecnologicas2">Utilizamos as
+                Melhores
+                Linguagens do Mercado.
+            </p>
+        </div>
+
+        <div data-aos="zoom-in-up" data-aos-duration="1000" class="imgEspecialidadesTec">
+            <img src="./src/imagens/ImagemDoDedo.jpg" alt="">
+            <br>
+            <p class="textoEspecialidadesTec"  id="textoEspecialidadesTecnologicas3">Erguendo Pontes para o Amanhã, com os Sonhos de Hoje
+        </div>
+        <br>
+    </div>
+    <h1>VENHA FAZER PARTE DA FAMILIA LOOPSTACKSOLUTIONS</h1>
+    <div data-aos="fade-up" data-aos-duration="1000" class="ConviteParaAFamiliaLoopStack">
+        <p class="textoConvite" class="formatacao" id="TextoConvitetrocacor">
+            A LoopStackSolutions é especializada em desenvolvimento de software sob
+            medida, consultoria tecnológica, integração de sistemas, aplicativos móveis e
+            soluções de e-commerce. Com foco em inovação e personalização, nossos projetos
+            incluem otimização de processos empresariais, transformação digital e criação de
+            plataformas eficientes, como sistemas de gestão, aplicativos de saúde e
+            integração de fintechs. Nosso objetivo é impulsionar o crescimento e a eficiência
+            dos negócios de nossos clientes por meio de soluções tecnológicas avançadas.
+
+        </p>
+        <br>
+        <div data-aos="flip-up" data-aos-duration="1000" class="ConteinerConvite">
+            <div class="imgConvite">
+                <img src="./src/imagens/especialidadesTecnologicas_fundo_azulComMAos.jfif" alt="">
+
+            </div>
+            <br>
+            <div data-aos="flip-up" data-aos-duration="3000" class="imgConvite" id="imgConvite2">
+                <img src="./src/imagens/EspeciallidadesTecnologicasComOIconeDeNuvem.jpg" alt="">
+
+            </div>
+            <br>
+        </div>
+    </div>
+    <h1 id="linkPerguntastasFrequentes">Perguntas Frequentes</h1>
+   <div class="accordion">
+        <div data-aos="zoom-in" data-aos-duration="1000" class="card" onclick="toggleCard(this)">
+            <div class="card-inner">
+                <div class="card-front">O que é uma empresa de desenvolvimento de sistemas?</div>
+                <div class="card-back">Criamos soluções de software personalizadas para atender às
+                    necessidades específicas de cada cliente.</div>
+            </div>
+        </div>
+        <br>
+        <div data-aos="zoom-in" data-aos-duration="1000" class="card" onclick="toggleCard(this)">
+            <div class="card-inner">
+                <div class="card-front">Quais serviços você oferece?</div>
+                <div class="card-back">
+                    Desenvolvimento de software sob medida, consultoria tecnológica,
+                    integração de sistemas, aplicativos móveis, e-commerce e
+                    transformação digital.
+                </div>
+            </div>
+        </div>
+        <br>
+        <div data-aos="zoom-in" data-aos-duration="1000" class="card" onclick="toggleCard(this)">
+            <div class="card-inner">
+                <div class="card-front">Qual é o prazo para o desenvolvimento de um sistema?</div>
+                <div class="card-back">
+                    O prazo depende da complexidade do projeto, mas fornece uma
+                    estimativa após análise das necessidades do cliente.</div>
+            </div>
+        </div>
+        <br>
+        <div data-aos="zoom-in" data-aos-duration="3000" class="card" onclick="toggleCard(this)">
+            <div class="card-inner">
+                <div class="card-front">Como funciona o processo de desenvolvimento?</div>
+                <div class="card-back">O processo inclui levantamento de requisitos , planejamento ,
+                    desenvolvimento , testes , implementação e manutenção.
+                </div>
+            </div>
+        </div>
+        <br>
+        <div data-aos="zoom-in" data-aos-duration="3000" class="card" onclick="toggleCard(this)">
+            <div class="card-inner">
+                <div class="card-front">Meu sistema será seguro?</div>
+                <div class="card-back">
+                    Sim, utilizamos as melhores práticas de segurança para
+                    proteger dados e garantir a integridade do sistema.</div>
+            </div>
+        </div>
+        <br>
+        <div data-aos="zoom-in" data-aos-duration="3000" class="card" onclick="toggleCard(this)">
+            <div class="card-inner">
+                <div class="card-front">Qual o custo do desenvolvimento?</div>
+                <div class="card-back">O custo varia conforme a complexidade do projeto.
+                    Fornecemos uma proposta personalizada após uma análise
+                    das necessidades.</div>
+            </div>
+        </div>
+        <br>
+        <div data-aos="zoom-in" data-aos-duration="3000" class="card" onclick="toggleCard(this)">
+            <div class="card-inner">
+                <div class="card-front">Há suporte pós-desenvolvimento?</div>
+                <div class="card-back">Sim, oferecemos suporte contínuo e manutenção para
+                    garantir o bom funcionamento do sistema.</div>
+            </div>
+        </div>
+        <br>
+        <div data-aos="zoom-in" data-aos-duration="3000" class="card" onclick="toggleCard(this)">
+            <div class="card-inner">
+                <div class="card-front">Como posso iniciar um projeto com sua empresa?</div>
+                <div class="card-back">Para iniciar, basta entrar em contato conosco para agendar
+                    uma reunião. Nela, vamos entender as necessidades do seu
+                    negócio e definir um plano personalizado para o
+                    desenvolvimento da solução.</div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <footer>
+
+        <div data-aos="fade-left" data-aos-duration="1000" id="conteudo_footer">
+           
+            <ul class="colunasDeLink" id="coluna1">
+                <h1 class="H1footer">Contatos</h1>
+                <li><a href="mailto:loopstack@gmail.com" target="_blank">LoopstackTechSolutions@gmail.com </a></li>
+                <BR>
+                <li><a href="https://www.instagram.com/@LoopstacktechSolutions">@LoopstacktechSolutions</a></li>
+                <BR>
+                <li id="concerto"><a href="https://www.google.com/maps/search/?q=Rua+Guaipá+678,+São+Paulo,+SP,+05089-001"
+                        target="_blank">
+                        Rua Guaipá,678 - Vila Leopoldina,São Paulo-SP</a></li>
+                <BR>
+                <li><a href="tel:+5511932795288" class="links-de-contato">Telefone:(11)932795288 </a></li>
+                <BR>
+
+            </ul>
+            <Ul class="colunasDeLink" id="coluna2">
+                <h1 class="H1footer">LoopStack</h1>
+                <li><a href="#SobreNos">Sobre nós</a></li>
+                <br>
+                <li><a href="#linkLocalizacao">Localização</a></li>
+                <br>
+                <li><a href="#linkPerguntastasFrequentes">FAQ</a></li>
+                <br>
+                <li><a href="#conteudo_footer">Fale conosco</a></li>
+
+            </Ul>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+      <script src="./src/js/script.js"></script>
+
+</body>
+
+</html>

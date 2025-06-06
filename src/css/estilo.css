@@ -302,9 +302,7 @@ nav svg{
             height:100px
 
         }
-           h1{
-        
-       }
+          
       
         header{
             padding: 10px;
@@ -655,16 +653,26 @@ h1{
 
 
 @media (max-width: 480px) {
- 
+  .solo img{
+    margin-top:100%;
+
+  }
+  .ajusteproresponsivo{
+    margin-top: 130%;
+  }
 
     .imgConvite img {
         max-width: 250px;
+        margin-left:15%
     }
     
     .texto{
         text-align: center;
         font-size: 200%;
     }
+     nav  svg {
+        margin-left: 35%;
+     }
   
 }
 

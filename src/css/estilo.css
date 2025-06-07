@@ -28,6 +28,7 @@ body{
     background:var(--background--color) ;
     font-family:'Nexa_light';
     transition:1s;
+    
 }
 html, body{
     overflow-x:hidden;
@@ -745,6 +746,7 @@ h1{
     transform: rotateY(180deg);
      margin-bottom: 20px;
 }
+
 footer a {
     width: 100%;
     color: var(--color--font);
@@ -986,3 +988,33 @@ footer ul{
 FOOTER H1{
     margin-left:15%;
 }
+@media (max-width: 430px) {
+ .solo img{
+    margin-top:150%;
+
+  }
+  .ajusteproresponsivo{
+    margin-top: 250%;
+  }
+.imgConvite img{
+    margin-left: 10%;
+}
+   .card.expanded{
+    margin-bottom: 50%;
+   } 
+   .accordion{
+    gap:40px;
+   }
+   .card-front{
+    height:100px
+   }
+   .card-front,.card-back{
+    padding: 15px;
+   }
+   .card-back{
+    height:300px;
+   }
+}
+.ancora{
+        visibility: hidden;
+    }

@@ -1017,7 +1017,7 @@ FOOTER H1{
             font-size: 95%;
         }
     }
-    @media (max-width:1280px){
+    @media (min-width:1280px){
         .tamanhosmedios{
             margin-right: 10%;
            

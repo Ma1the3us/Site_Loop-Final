@@ -13,6 +13,7 @@ html {
 }
 
 
+
 *{
     margin:0;
     padding: 0;
@@ -28,7 +29,7 @@ body{
     background:var(--background--color) ;
     font-family:'Nexa_light';
     transition:1s;
-    
+    scroll-behavior: smooth;
 }
 html, body{
     overflow-x:hidden;
@@ -75,6 +76,7 @@ nav {
     transition: 1s;
     gap:20px;
     z-index: 2;
+    
     
 }
 .botaoTrocaFundo{
@@ -134,8 +136,8 @@ nav svg{
           
           
           }
-       @media  (max-width:1024px){
-      .imgclientes  
+       @media  (max-width:1024px ){
+        
       
         .botao_estrela svg,.botaoTrocaFundo svg{
             margin-left: 25%;
@@ -166,6 +168,7 @@ nav svg{
             height:auto;
             animation-duration: 1s;
             margin-left:-300vw;
+            padding-left: 90px;
           
         }
         
@@ -244,12 +247,10 @@ nav svg{
               flex: 1 1 calc(50% - 20px);
           }
           .solo img {
-    width: 80%;
-   margin-top: 30%;
-    
-    height: auto;
-    
-}
+                    width: 80%;
+                    margin-top: 30%;
+                    height: auto;
+                    }
         @keyframes shoSideBar {
             from{   margin-left:-145vw}
             top{
@@ -261,14 +262,12 @@ nav svg{
             margin-left:3%;
         }
         .card.expanded {
-            margin-bottom:30% ;
-            
+            margin-bottom:30% ; 
         }
       .imgclientes,.solo{
         max-height: 400px;
         margin-bottom:10px ;
       }
-
        .solo{
         margin-top: 50%;
        max-height:400px;
@@ -277,22 +276,17 @@ nav svg{
      .imgEspecialidadesTec{
         margin-right:10%  ;
      }
-   
        h1{
         margin-top:20%
        }
-       
-       
     }
     @media  (max-width:768px){
         #concerto{
          font-size:100%
         }
-      
         .botao_estrela svg,.botaoTrocaFundo svg{
             margin-left: 25%;
           }
- 
         .botao_barrinha{
             display:block;
             margin-right: 70%;
@@ -303,13 +297,9 @@ nav svg{
             height:100px
 
         }
-          
-      
         header{
             padding: 10px;
         }
-        
-   
         nav {
             position:absolute;
             flex-direction:column;
@@ -317,11 +307,8 @@ nav svg{
             width: auto;
             height:auto;
             animation-duration: 1s;
-            margin-left:-300vw;
-          
-        }
-        
-        
+            margin-left: -300vw;
+        }        
         .botao_barrinha2{
            
             margin-bottom: 1vh;
@@ -646,20 +633,13 @@ h1{
     height: 300px;
     border: solid;
 }
-
-
-
-
-
-
-
 @media (max-width: 480px) {
   .solo img{
     margin-top:100%;
 
   }
   .ajusteproresponsivo{
-    margin-top: 130%;
+    margin-top: 140%;
   }
 
     .imgConvite img {
@@ -837,7 +817,11 @@ footer ul{
 
 
 @media screen and (max-width: 1024px) {
-
+nav{
+    flex-direction: column; /* Alinha os elementos em coluna */
+        justify-content: center; /* Centraliza os elementos verticalmente */
+        align-items: center; /* Centraliza os elementos horizontalmente */
+}
     
     .H1footer{
     text-align:left;
@@ -893,9 +877,7 @@ footer ul{
     #logodenovo {
         display:none;
     }
-     .texto{
-        text-align: left;
-       
+     .texto{      
         margin-right: 0%;
         font-size: 200%;
     }
@@ -907,6 +889,7 @@ footer ul{
         height:auto;
         animation-duration: 1s;
         margin-left:-1000vw;
+        
       
     }
     nav a {
@@ -917,6 +900,9 @@ footer ul{
     }
 .imgclientes, .solo{
     margin-top: 30%;
+}
+.botaoTrocaFundo,.botao_estrela{
+    margin-left:35%
 }
 }
 
@@ -1014,7 +1000,57 @@ FOOTER H1{
    .card-back{
     height:300px;
    }
+   h1{
+    font-size: 190%;
+   }
+   footer a{
+    font-size: 90%;
+   }
 }
+@media(max-width:412px){
+    footer a{
+        font-size:100%
+    }
+}
+    @media(max-width:395px){
+        footer a {
+            font-size: 95%;
+        }
+    }
+    @media (max-width:1280px){
+        .tamanhosmedios{
+            margin-right: 10%;
+           
+        }
+         .containerClientes {
+            grid-template-columns: 1fr; 
+            gap: 20px;
+        }
+        #imgConvite2{
+            display: none;
+        }
+        .imgConvite{
+            margin-left: 25%;
+        }
+        footer ul{
+            margin-left: 20%;
+        }
+        .imgEspecialidadesTec {
+            margin-left: -3%;
+        }
+       
+            header img{
+                display:none
+            }
+            nav{
+                margin-left: -10%;
+            }
+    }
+
+    
 .ancora{
         visibility: hidden;
     }
+   
+
+

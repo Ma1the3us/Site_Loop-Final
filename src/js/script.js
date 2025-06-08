@@ -1,3 +1,5 @@
+
+
 function toggleCard(card) {
     card.classList.toggle('expanded');
   }
@@ -6,18 +8,36 @@ function toggleCard(card) {
   var nav =document.getElementById('navegacao');
   var showSideBar=false;
   
-  function togglesidebar(){
-    showSideBar = !showSideBar; 
-  
-    if(showSideBar){
-      navegacao.style.marginLeft='-300vw';
+ function togglesidebar() {
+    showSideBar = !showSideBar;
+
+    if (showSideBar) {
+        navegacao.style.marginLeft = '-300vw'; // Esconde a barra de navegação
+    } else {
+        navegacao.style.marginLeft = '-65vw'; // Mostra a barra de navegação
     }
-    else{
-      navegacao.style.marginLeft="-65vw";
+    // Remover efeito quando a tela for maior que 768px
+window.addEventListener('resize', function () {
+    if (window.innerWidth > 1024) {
+        navegacao.style.marginLeft = '20%'; // Garante que a barra fique visível
+        showSideBar = false; // Reseta o estado da variável
     }
+});
+
+if(window.innerWidth<1024){
+  var links = navegacao.querySelectorAll('a');
+links.forEach(link => {
+    link.addEventListener('click', function () {
+        navegacao.style.marginLeft = '-300vw'; // Esconde a barra de navegação
+        showSideBar = false; // Reseta o estado da variável
+    });
+});
+}
+}
+
+
+
  
-  
-  }
   function ModoEScuro(){
     document.body.style.backgroundColor = "#3236ab"; 
     document.getElementById('textoSobreNos').style.color="white";

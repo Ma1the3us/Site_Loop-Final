@@ -975,6 +975,16 @@ FOOTER H1{
     margin-left:15%;
 }
 @media (max-width: 430px) {
+    .texto{
+        font-size: 180%;
+        margin-right: 2%;
+        
+        
+    }
+    .imgclientes img{
+            margin-top: -40%;
+
+    }
  .solo img{
     margin-top:150%;
 
@@ -1017,35 +1027,7 @@ FOOTER H1{
             font-size: 95%;
         }
     }
-    @media (min-width:1280px){
-        .tamanhosmedios{
-            margin-right: 10%;
-           
-        }
-         .containerClientes {
-            grid-template-columns: 1fr; 
-            gap: 20px;
-        }
-        #imgConvite2{
-            display: none;
-        }
-        .imgConvite{
-            margin-left: 25%;
-        }
-        footer ul{
-            margin-left: 20%;
-        }
-        .imgEspecialidadesTec {
-            margin-left: -3%;
-        }
-       
-            header img{
-                display:none
-            }
-            nav{
-                margin-left: -10%;
-            }
-    }
+   
 
     
 .ancora{

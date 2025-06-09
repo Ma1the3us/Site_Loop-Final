@@ -923,6 +923,16 @@ nav{
 
   @media (max-width: 480px) {
 
+     .texto{
+        font-size: 180%;
+        margin-right: 2%;
+        
+        
+    }
+    .imgclientes img{
+            margin-top: -50%;
+
+    }
     .card-back{
             margin-bottom: 20%;
     }
@@ -974,6 +984,7 @@ footer ul{
 FOOTER H1{
     margin-left:15%;
 }
+
 @media (max-width: 430px) {
     .texto{
         font-size: 180%;
@@ -1018,6 +1029,16 @@ FOOTER H1{
    }
 }
 @media(max-width:412px){
+    .texto{
+        font-size: 180%;
+        margin-right: 2%;
+        
+        
+    }
+    .imgclientes img{
+            margin-top: -40%;
+
+    }
     footer a{
         font-size:100%
     }

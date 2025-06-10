@@ -38,90 +38,73 @@ links.forEach(link => {
 
 
  
-  function ModoEScuro(){
-    document.body.style.backgroundColor = "#3236ab"; 
-    document.getElementById('textoSobreNos').style.color="white";
-    document.getElementById('textoLocalização1').style.color="white";
-    document.getElementById('textoCliente').style.color="white";
-    document.getElementById('textoCliente2').style.color="white";
-    document.getElementById('textoCliente3').style.color="white";
-    document.getElementById('textoCliente4').style.color="white";
-    document.getElementById("textoEspecialidadesTecnologicas").style.color = "white"; 
-    document.getElementById("textoEspecialidadesTecnologicas2").style.color = "white";
-    document.getElementById("textoEspecialidadesTecnologicas3").style.color = "white"; 
-    document.getElementById("TextoConvitetrocacor").style.color = "white";
-    document.getElementById("conteudo_footer").style.backgroundColor="black" 
-    document.getElementById('coluna1').style.color='white';
-    document.querySelectorAll("#conteudo_footer a").forEach(link => {
-      link.style.color = "white"; 
-  });
-    document.querySelectorAll("h1").forEach(elemento => {
-      elemento.style.color = "orange";
-    });
+  function alternarModo() {
+    // Verifica se o modo escuro está ativo
+    const isModoEscuro = document.body.style.backgroundColor === "rgb(50, 54, 171)"; 
 
-      document.querySelectorAll("#header a").forEach(link => {
-        link.style.color = "white"; 
-    });
-    document.getElementById("claro").style.display = "none";
-    document.getElementById("colorButton").style.display = "block";
-   
-    document.getElementById('navegacao').style.backgroundColor="black";    
-    document.querySelector('a').style.hover="#ff6600";
+    // Aplica os estilos para o modo claro e escuro
+    const modo = isModoEscuro ? {
+        bgCor: "#b2caec",
+        textoCor: "black",
+        footerBgCor: "#82aee3",
+        navBgCor: "#7792ff",
+        linkCor: "black",
+        linkHoverCor: "#ff6600",
+        h1Cor: "black",
+        displayClaro: "block",
+        displayColorButton: "none"
+    } : {
+        bgCor: "#3236ab",
+        textoCor: "white",
+        footerBgCor: "black",
+        navBgCor: "black",
+        linkCor: "white",
+        linkHoverCor: "#ff6600",
+        h1Cor: "orange",
+        displayClaro: "none",
+        displayColorButton: "block"
+    };
+
+    // Aplica as cores e estilos de acordo com o modo
+    document.body.style.backgroundColor = modo.bgCor;
+    document.body.style.color = modo.textoCor;
+    document.getElementById('textoSobreNos').style.color = modo.textoCor;
+    document.getElementById('textoLocalização1').style.color = modo.textoCor;
+    document.getElementById('textoCliente').style.color = modo.textoCor;
+    document.getElementById('textoCliente2').style.color = modo.textoCor;
+    document.getElementById('textoCliente3').style.color = modo.textoCor;
+    document.getElementById('textoCliente4').style.color = modo.textoCor;
+    document.getElementById("textoEspecialidadesTecnologicas").style.color = modo.textoCor;
+    document.getElementById("textoEspecialidadesTecnologicas2").style.color = modo.textoCor;
+    document.getElementById("textoEspecialidadesTecnologicas3").style.color = modo.textoCor;
+    document.getElementById("TextoConvitetrocacor").style.color = modo.textoCor;
+    document.getElementById("conteudo_footer").style.backgroundColor = modo.footerBgCor;
+    document.getElementById('coluna1').style.color = modo.textoCor;
+    document.getElementById('navegacao').style.backgroundColor = modo.navBgCor;
+
+    // Estilos de links e h1
+    document.querySelectorAll("#conteudo_footer a").forEach(link => link.style.color = modo.linkCor);
+    document.querySelectorAll("h1").forEach(elemento => elemento.style.color = modo.h1Cor);
+    document.querySelectorAll("#header a").forEach(link => link.style.color = modo.linkCor);
+
+    // Alterna visibilidade dos botões
+    
+    document.getElementById("colorButton").style.display = modo.displayColorButton;
+
+    // Adiciona eventos de hover para links
     document.querySelectorAll("a").forEach(link => {
-     
         link.addEventListener("mouseover", function () {
-            link.style.color = "#ff6600"; 
-            link.style.textDecoration = "underline"; 
+            link.style.color = modo.linkHoverCor;
+            link.style.textDecoration = "underline";
         });
 
         link.addEventListener("mouseout", function () {
-            link.style.color = "white"; 
-            link.style.textDecoration = "none"; 
+            link.style.color = modo.linkCor;
+            link.style.textDecoration = "none";
         });
     });
-  }
-  
-  function ModoClaro(){
-    document.body.style.backgroundColor = "#b2caec"; 
-    document.getElementById('textoSobreNos').style.color="black";
-    document.getElementById('textoLocalização1').style.color="black";
-    document.getElementById('textoCliente').style.color="black";
-    document.getElementById('textoCliente2').style.color="black";
-    document.getElementById('textoCliente3').style.color="black";
-    document.getElementById('textoCliente4').style.color="black";
-    document.getElementById("textoEspecialidadesTecnologicas").style.color = "black"; 
-    document.getElementById("textoEspecialidadesTecnologicas2").style.color = "black"; 
-    document.getElementById("textoEspecialidadesTecnologicas3").style.color = "black"; 
-    document.getElementById("TextoConvitetrocacor").style.color = "black";
-    document.getElementById("conteudo_footer").style.backgroundColor="#82aee3" 
-    document.getElementById('coluna1').style.color='black';
-    document.querySelectorAll("#conteudo_footer a").forEach(link => {
-      link.style.color = "black"; 
-  });
-    document.querySelectorAll("h1").forEach(elemento => {
-      elemento.style.color = "black";
-    });
-
-      document.querySelectorAll("#header a").forEach(link => {
-        link.style.color = "black"; 
-    });
-    document.getElementById("claro").style.display = "block";
-   
-    document.getElementById("colorButton").style.display = "none";
-    document.getElementById('navegacao').style.backgroundColor="#7792ff";
-    document.querySelectorAll("a").forEach(link => {
-      link.addEventListener("mouseover", function () {
-          link.style.color = "#ff6600"; 
-          link.style.textDecoration = "underline"; 
-      });
-
-      link.addEventListener("mouseout", function () {
-          link.style.color = "black"; 
-          link.style.textDecoration = "none"; 
-      });
-  });
-
 }
+
 window.onscroll = function() {
   let botao = document.getElementById("botaoTopo");
   if (document.documentElement.scrollTop > 200) {

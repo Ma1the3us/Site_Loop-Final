@@ -173,6 +173,7 @@ nav svg{
         }
         
         
+        
         .botao_barrinha2{
            
             margin-bottom: 1vh;
@@ -892,11 +893,12 @@ nav{
         
       
     }
-    nav a {
-        margin-left: 40%;
+     nav a {
+        margin-left: 20%;
     }
+   
     .botao_barrinha2{
-        margin-left: 50%;
+        margin-left: 20%;
     }
 .imgclientes, .solo{
     margin-top: 30%;
@@ -909,6 +911,7 @@ nav{
 
  
   @media (max-width: 768px) {
+    
     .colunasDeLink,#coluna2 {
     
         text-align: left;
@@ -986,6 +989,7 @@ FOOTER H1{
 }
 
 @media (max-width: 430px) {
+   
     .texto{
         font-size: 180%;
         margin-right: 2%;
@@ -1029,6 +1033,9 @@ FOOTER H1{
    }
 }
 @media(max-width:412px){
+    .posicao{
+        margin-right: 40%;
+    }
     .texto{
         font-size: 180%;
         margin-right: 2%;

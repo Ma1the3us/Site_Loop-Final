@@ -168,7 +168,7 @@ nav svg{
             height:auto;
             animation-duration: 1s;
             margin-left:-300vw;
-            padding-left: 90px;
+           
           
         }
         
@@ -309,6 +309,7 @@ nav svg{
             height:auto;
             animation-duration: 1s;
             margin-left: -300vw;
+             padding-left: 90px;
         }        
         .botao_barrinha2{
            
@@ -370,7 +371,7 @@ nav svg{
     
         .imgConvite img {
             max-width: 300px; 
-           margin-left: 0%;
+           margin-left: 10%;
             
         }
         #imgConvite2{
@@ -450,12 +451,12 @@ h1{
     text-align: center;
    margin-left: 5%;
     
-    font-size: 200%;
+    font-size: 250%;
 }
-.textoLocalizazao{
+.textoLocalizacao{
     text-align: center;
      
-     font-size: 200%;
+     font-size: 250%;
 
 }
 .formatacao{
@@ -516,7 +517,7 @@ h1{
 
 .textocliente {
     margin-top: 10px;
-    font-size: 200%;
+    font-size: 210%;
     width: 80%;
     word-wrap:normal;
     text-align: center;
@@ -867,6 +868,15 @@ nav{
 }
 
 @media screen and (max-width: 462px) {
+     header img{
+            margin-left: 15%;
+        }
+    
+    .textoLocalizacao{
+        font-size: 180%;
+        
+    }
+    
     .colunasDeLink {
         font-size: 100%;
         text-align: left;
@@ -989,6 +999,12 @@ FOOTER H1{
 }
 
 @media (max-width: 430px) {
+    .fim{
+        margin-top:20%
+    }
+    .ajusteproresponsivo{
+        margin-top: 20%;
+    }
    
     .texto{
         font-size: 180%;
@@ -998,17 +1014,16 @@ FOOTER H1{
     }
     .imgclientes img{
             margin-top: -40%;
-
     }
  .solo img{
-    margin-top:150%;
-
+    margin-top:120%;
   }
   .ajusteproresponsivo{
     margin-top: 250%;
   }
 .imgConvite img{
     margin-left: 10%;
+    margin-bottom: 50%;
 }
    .card.expanded{
     margin-bottom: 50%;
@@ -1033,7 +1048,30 @@ FOOTER H1{
    }
 }
 @media(max-width:412px){
+   
     .posicao{
+        margin-right: 40%;
+    }
+    .texto{
+        font-size: 180%;
+        margin-right: 2%;
+        
+        
+    }
+    .imgclientes img{
+            margin-top: -40%;
+    }
+    footer a{
+        font-size:100%
+    }
+    
+}
+    @media(max-width:395px){
+      
+        footer a {
+            font-size: 95%;
+        }
+           .posicao{
         margin-right: 40%;
     }
     .texto{
@@ -1049,11 +1087,9 @@ FOOTER H1{
     footer a{
         font-size:100%
     }
-}
-    @media(max-width:395px){
-        footer a {
-            font-size: 95%;
-        }
+    .textoConvite{
+        font-size:180%
+    }
     }
    
 

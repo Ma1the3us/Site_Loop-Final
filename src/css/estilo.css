@@ -634,7 +634,7 @@ h1{
     max-width: 500px;
     height: 300px;
     border: solid;
-    margin-left: 35%;
+    margin-left: 20%;
 }
 @media (max-width: 480px) {
   .solo img{
@@ -1068,7 +1068,7 @@ FOOTER H1{
     margin-top: 20%;
 }
 FOOTER H1{
-    margin-left:5%
+    margin-left:-5%
 }
    
 }

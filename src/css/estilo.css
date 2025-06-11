@@ -638,11 +638,11 @@ h1{
 }
 @media (max-width: 480px) {
   .solo img{
-    margin-top:100%;
+    margin-top:10%;
 
   }
   .ajusteproresponsivo{
-    margin-top: 140%;
+    margin-top: -50%;
   }
 
     .imgConvite img {

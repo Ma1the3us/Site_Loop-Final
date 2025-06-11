@@ -417,7 +417,7 @@ nav svg{
 
 .imagemBG {
     width: 100%;
-    max-height: 500px;
+    max-height: 900px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -634,7 +634,7 @@ h1{
     max-width: 500px;
     height: 300px;
     border: solid;
-    margin-left: 20%;
+    margin-left: 35%;
 }
 @media (max-width: 480px) {
   .solo img{
@@ -1058,7 +1058,7 @@ FOOTER H1{
     }
     .imgConvite img{
         height: 90%;
-        margin-left:6%
+        
     }
     
    .textoEspecialidadesTec{
@@ -1066,6 +1066,9 @@ FOOTER H1{
    }
 #linkLocalizacao{
     margin-top: 20%;
+}
+FOOTER H1{
+    margin-left:5%
 }
    
 }

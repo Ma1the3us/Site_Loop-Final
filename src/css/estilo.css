@@ -951,6 +951,8 @@ nav{
             margin-bottom: 20%;
     }
 
+   
+
   }
   /* Estiliza o botão */
   #botaoTopo {
@@ -1067,10 +1069,10 @@ FOOTER H1{
 #linkLocalizacao{
     margin-top: 20%;
 }
-FOOTER H1{
+    FOOTER H1{
     margin-left:-5%
 }
-   
+
 }
 @media(max-width:412px){
    

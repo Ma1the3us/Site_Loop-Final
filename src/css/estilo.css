@@ -999,7 +999,10 @@ footer ul{
 }
 FOOTER H1{
     margin-left:15%;
-}
+
+
+
+
 
 @media (max-width: 430px) {
     .fim{
@@ -1022,9 +1025,7 @@ FOOTER H1{
  .solo img{
     margin-top:10%;
   }
-  .ajusteproresponsivo{
-    margin-top: -60%;
-  }
+  
 .imgConvite img{
     margin-left: 10%;
     margin-bottom: 50%;
@@ -1072,6 +1073,10 @@ FOOTER H1{
     FOOTER H1{
     margin-left:-5%
 }
+}
+.ajusteproresponsivo{
+    margin-top: -60%;
+  }
 
 }
 @media(max-width:412px){

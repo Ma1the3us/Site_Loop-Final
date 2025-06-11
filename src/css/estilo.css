@@ -552,7 +552,7 @@ h1{
     
 
     .textocliente {
-        font-size:180%; 
+        font-size:140%; 
         width: 90%;
         text-align:center;   
         word-wrap: break-word;
@@ -1020,10 +1020,10 @@ FOOTER H1{
             margin-top: -40%;
     }
  .solo img{
-    margin-top:140%;
+    margin-top:10%;
   }
   .ajusteproresponsivo{
-    margin-top: 250%;
+    margin-top: 20%;
   }
 .imgConvite img{
     margin-left: 10%;
@@ -1056,7 +1056,7 @@ FOOTER H1{
         font-size:90%
     }
     .textoConvite{
-        font-size:180%
+        font-size:140%
     }
     .imgConvite img{
         height: 90%;

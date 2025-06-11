@@ -1050,6 +1050,23 @@ FOOTER H1{
    footer a{
     font-size: 90%;
    }
+   footer a{
+        font-size:80%
+    }
+    .textoConvite{
+        font-size:180%
+    }
+    .imgConvite img{
+        height: 90%;
+        margin-left:6%
+    }
+    
+   .textoEspecialidadesTec{
+    margin-bottom: 30%;
+   }
+#linkLocalizacao{
+    margin-top: 20%;
+}
    
 }
 @media(max-width:412px){
@@ -1089,23 +1106,7 @@ FOOTER H1{
             margin-top: -40%;
 
     }
-    footer a{
-        font-size:80%
-    }
-    .textoConvite{
-        font-size:180%
-    }
-    .imgConvite img{
-        height: 90%;
-        margin-left:6%
-    }
     
-   .textoEspecialidadesTec{
-    margin-bottom: 60%;
-   }
-#linkLocalizacao{
-    margin-top: 40%;
-}
     }
    
 

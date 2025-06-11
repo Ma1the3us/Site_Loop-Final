@@ -442,7 +442,7 @@ h1{
     margin-top: 5%;
     margin-left: 5%;
     margin-bottom: 5%;
-    font-size: 225%;
+    font-size: 280%;
     width: 90%;
 
     
@@ -606,7 +606,7 @@ h1{
 /*Convite*/
 .textoConvite {
     width: 90%;
-    font-size: 200%;
+    font-size: 250%;
     margin-left: 5%;
     text-align: center;
 }
@@ -1073,7 +1073,7 @@ FOOTER H1{
     @media(max-width:395px){
       
         footer a {
-            font-size: 86%;
+            font-size: 80%;
         }
            .posicao{
         margin-right: 40%;

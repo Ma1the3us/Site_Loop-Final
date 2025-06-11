@@ -642,7 +642,7 @@ h1{
 
   }
   .ajusteproresponsivo{
-    margin-top: 140%;
+    margin-top: 50%;
   }
 
     .imgConvite img {
@@ -1074,9 +1074,7 @@ FOOTER H1{
     margin-left:-5%
 }
 }
-.ajusteproresponsivo{
-    margin-top: -60%;
-  }
+
 
 }
 @media(max-width:412px){

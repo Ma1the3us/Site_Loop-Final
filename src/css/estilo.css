@@ -450,7 +450,7 @@ h1{
 .texto{
     text-align: center;
    margin-left: 5%;
-    
+    width:90%;
     font-size: 250%;
 }
 .textoLocalizacao{
@@ -517,7 +517,7 @@ h1{
 
 .textocliente {
     margin-top: 10px;
-    font-size: 210%;
+    font-size: 250%;
     width: 80%;
     word-wrap:normal;
     text-align: center;
@@ -597,7 +597,7 @@ h1{
 
 .textoEspecialidadesTec {
     margin-top: 15px; 
-    font-size: 200%; 
+    font-size: 225%; 
     width: 300px; 
     word-wrap: break-word; 
     text-align:center; 
@@ -634,6 +634,7 @@ h1{
     max-width: 500px;
     height: 300px;
     border: solid;
+    margin-left: 20%;
 }
 @media (max-width: 480px) {
   .solo img{
@@ -1000,7 +1001,8 @@ FOOTER H1{
 
 @media (max-width: 430px) {
     .fim{
-        margin-top:20%
+        margin-top:20%;
+        font-size:170%
     }
     .ajusteproresponsivo{
         margin-top: 20%;
@@ -1016,7 +1018,7 @@ FOOTER H1{
             margin-top: -40%;
     }
  .solo img{
-    margin-top:120%;
+    margin-top:140%;
   }
   .ajusteproresponsivo{
     margin-top: 250%;
@@ -1032,13 +1034,15 @@ FOOTER H1{
     gap:40px;
    }
    .card-front{
-    height:100px
+    height:100px;
+    margin-left:-10%
    }
    .card-front,.card-back{
     padding: 15px;
    }
    .card-back{
     height:300px;
+    margin-left: -10%;
    }
    h1{
     font-size: 190%;
@@ -1069,7 +1073,7 @@ FOOTER H1{
     @media(max-width:395px){
       
         footer a {
-            font-size: 95%;
+            font-size: 86%;
         }
            .posicao{
         margin-right: 40%;
@@ -1090,6 +1094,12 @@ FOOTER H1{
     .textoConvite{
         font-size:180%
     }
+    .imgConvite img{
+        height: 90%;
+        margin-left:6%
+    }
+   
+
     }
    
 

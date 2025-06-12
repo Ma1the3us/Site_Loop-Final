@@ -1,6 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
-
 :root{
     --background--color:#b2caec;
     --background--header:#ffffff;
@@ -22,11 +20,14 @@ html {
     font-family: 'Nexa_light';
   
 }
-
+@font-face {
+    font-family: Nexa_light;
+    src: url(./Nexa_Light.otf);
+}
 
 body{
     background:var(--background--color) ;
-    font-family: "Didact Gothic", sans-serif;
+    font-family:'Nexa_light';
     transition:1s;
     scroll-behavior: smooth;
 }
@@ -459,7 +460,7 @@ h1{
 }
 .textoLocalizacao{
     text-align: justify;
-     margin-left: 30%;
+     margin-left: 33%;
      font-size: 250%;
 
 }
@@ -1024,7 +1025,7 @@ FOOTER H1{
         font-size:190%
     }
     .ajusteproresponsivo{
-        margin-top: 20%;
+        margin-top: -40%;
     }
    
     .texto{
@@ -1109,7 +1110,7 @@ FOOTER H1{
         
     }
     .imgclientes img{
-            margin-top: -40%;
+            margin-top: -30%;
     }
     footer a{
         font-size:100%

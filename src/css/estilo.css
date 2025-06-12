@@ -138,6 +138,9 @@ nav svg{
           
           
           }
+          .ajusteproresponsivo{
+        margin-top: -10%;
+    }
        @media  (max-width:1024px ){
         
       
@@ -457,7 +460,7 @@ h1{
 }
 .textoLocalizacao{
     text-align: justify;
-     margin-left: 20%;
+     margin-left: 30%;
      font-size: 250%;
 
 }
@@ -478,7 +481,7 @@ h1{
     grid-template-columns: 1fr 1fr; 
     gap: 50px 150px;
     justify-content: center;
-    margin: 50px auto;
+    margin: -100px auto;
     width: auto;
 }
 
@@ -599,10 +602,10 @@ h1{
 
 .textoEspecialidadesTec {
     margin-top: 15px; 
-    font-size: 183%; 
-    width: 230px; 
+    font-size: 200%; 
+    width: 300px; 
     word-wrap: break-word; 
-    text-align:justify; 
+    text-align:center; 
     
 }
 /*Convite*/
@@ -1088,7 +1091,7 @@ FOOTER H1{
     margin-left:-5%
 }
     .textoLocalizacao{
-        margin: 5%;
+        margin-left: 5%;
     }
 
 }
@@ -1111,6 +1114,9 @@ FOOTER H1{
     }
     footer a{
         font-size:100%
+    }
+    .textoLocalizacao{
+        margin-left: 5%;
     }
     
 }
@@ -1139,6 +1145,11 @@ FOOTER H1{
     
 .ancora{
         visibility: hidden;
+    }
+    @media(max-width:1280px){
+        .textoLocalizacao{
+            margin-left: 5%;
+        }
     }
    
 

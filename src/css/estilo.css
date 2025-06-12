@@ -457,7 +457,7 @@ h1{
 }
 .textoLocalizacao{
     text-align: justify;
-     margin-left: 15%;
+     margin: 5%;
      font-size: 250%;
 
 }
@@ -653,7 +653,7 @@ h1{
     }
     
     .texto{
-        text-align: center;
+        
         font-size: 200%;
     }
      nav  svg {
@@ -719,12 +719,12 @@ h1{
     transform: rotateY(180deg);
     background-color: #000000;
     border:solid white;
-    height:120px;
-   
-  
-  
-   
-     
+    height:120px; 
+}
+img{
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card.expanded .card-inner {
@@ -1049,6 +1049,8 @@ FOOTER H1{
    .card-back{
     height:300px;
     margin-left: -10%;
+    padding-top: 50px;
+    padding-bottom: 50px;
    }
    h1{
     font-size: 190%;

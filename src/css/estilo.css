@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
 :root{
     --background--color:#b2caec;
     --background--header:#ffffff;
@@ -20,14 +22,11 @@ html {
     font-family: 'Nexa_light';
   
 }
-@font-face {
-    font-family: Nexa_light;
-    src: url(../CSS/fontes/Nexa_Light.otf);
-}
+
 
 body{
     background:var(--background--color) ;
-    font-family:'Nexa_light';
+    font-family: "Didact Gothic", sans-serif;
     transition:1s;
     scroll-behavior: smooth;
 }

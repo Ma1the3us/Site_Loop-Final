@@ -660,7 +660,7 @@ h1{
         font-size: 200%;
     }
      nav  svg {
-        margin-left: 30%;
+        margin-left: 20%;
      }
   
 }
@@ -880,6 +880,7 @@ nav{
  header img{
     margin-left: 35%;
  }
+
 }
 
 @media screen and (max-width: 462px) {
@@ -1077,7 +1078,7 @@ FOOTER H1{
         font-size:140%
     }
     .imgConvite img{
-        height: 90%;
+        height: 250px;
         
     }
     

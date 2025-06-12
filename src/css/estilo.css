@@ -457,7 +457,7 @@ h1{
 }
 .textoLocalizacao{
     text-align: justify;
-     margin: 5%;
+     margin-left: 20%;
      font-size: 250%;
 
 }
@@ -636,7 +636,7 @@ h1{
     max-width: 500px;
     height: 300px;
     border: solid;
-    margin-left: 20%;
+    margin-left: 10%;
 }
 @media (max-width: 480px) {
   .solo img{
@@ -822,6 +822,9 @@ footer ul{
 
 
 @media screen and (max-width: 1024px) {
+    .textoLocalizacao{
+        margin: auto 5%;
+    }
 nav{
     flex-direction: column; /* Alinha os elementos em coluna */
         justify-content: center; /* Centraliza os elementos verticalmente */
@@ -867,6 +870,12 @@ nav{
 
  .espacamento{
    margin-top: 100%;
+ }
+ .imgConvite img{
+    margin-left: 17%;
+ }
+ header img{
+    margin-left: 35%;
  }
 }
 
@@ -1078,6 +1087,9 @@ FOOTER H1{
     FOOTER H1{
     margin-left:-5%
 }
+    .textoLocalizacao{
+        margin: 5%;
+    }
 
 }
 

@@ -34,9 +34,7 @@ body{
 html, body{
     overflow-x:hidden;
 }
-.formatacao{
-    text-align: left;
-}
+
 
 header {
     width: 99%;
@@ -119,13 +117,17 @@ nav svg{
 }
 
 .botao_barrinha2{
-    display:none
+    display:none;
+    background: transparent;
+    border:hidden
 }
     .botao_barrinha
     {
         max-width: 100px;
         max-height: 100px;
         display: none;
+         background: transparent;
+         border:hidden
     }
   
     .botao_estrela ,.botaoTrocaFundo svg{
@@ -202,7 +204,7 @@ nav svg{
         .textocliente {
             font-size: 200%; 
             width: 100%;
-            text-align: center;
+            align-content: center;
             word-wrap: break-word;
         }
         .EspecialidadesTec {
@@ -227,7 +229,7 @@ nav svg{
     
         .textoEspecialidadesTec {
             font-size: 200%; 
-            text-align: center;
+            text-align: justify;
             width: 100%;
         }
                
@@ -339,7 +341,7 @@ nav svg{
         .textocliente {
             font-size: 200%; 
             width: 100%;
-            text-align: center;
+            align-content: center;
             word-wrap: break-word;
         }
         .EspecialidadesTec {
@@ -364,7 +366,7 @@ nav svg{
     
         .textoEspecialidadesTec {
             font-size: 200%; 
-            text-align: center;
+            text-align: justify ;
             width: 100%;
         }
                
@@ -448,14 +450,14 @@ h1{
     
 }
 .texto{
-    text-align: center;
+    text-align: justify;
    margin-left: 5%;
     width:90%;
     font-size: 250%;
 }
 .textoLocalizacao{
-    text-align: center;
-     
+    text-align: justify;
+     margin-left: 15%;
      font-size: 250%;
 
 }
@@ -482,7 +484,7 @@ h1{
 
 
 .imgclientes, .solo {
-    text-align: center;
+    text-align: justify;
     
     
 
@@ -517,10 +519,10 @@ h1{
 
 .textocliente {
     margin-top: 10px;
-    font-size: 250%;
+    font-size: 200%;
     width: 80%;
     word-wrap:normal;
-    text-align: center;
+    text-align: justify;
     margin-left: 10%;
     color:black;
  
@@ -543,7 +545,7 @@ h1{
     }
     
     .texto{
-        text-align: center;
+        text-align: justify;
       
 
         font-size: 200%;
@@ -554,7 +556,7 @@ h1{
     .textocliente {
         font-size:140%; 
         width: 90%;
-        text-align:center;   
+        text-align:justify;   
         word-wrap: break-word;
         margin-left:5%;
     }
@@ -597,18 +599,18 @@ h1{
 
 .textoEspecialidadesTec {
     margin-top: 15px; 
-    font-size: 200%; 
-    width: 300px; 
+    font-size: 183%; 
+    width: 230px; 
     word-wrap: break-word; 
-    text-align:center; 
+    text-align:justify; 
     
 }
 /*Convite*/
 .textoConvite {
     width: 90%;
-    font-size: 140%;
+    font-size: 200%;
     margin-left: 5%;
-    text-align: center;
+    text-align:justify;
 }
 
 .ConviteParaAFamiliaLoopStack {
@@ -655,7 +657,7 @@ h1{
         font-size: 200%;
     }
      nav  svg {
-        margin-left: 35%;
+        margin-left: 30%;
      }
   
 }
@@ -915,7 +917,7 @@ nav{
     margin-top: 30%;
 }
 .botaoTrocaFundo,.botao_estrela{
-    margin-left:35%
+    margin-left:90%
 }
 }
 
@@ -1008,7 +1010,7 @@ FOOTER H1{
 @media (max-width: 430px) {
     .fim{
         margin-top:20%;
-        font-size:10%
+        font-size:190%
     }
     .ajusteproresponsivo{
         margin-top: 20%;
@@ -1107,7 +1109,7 @@ FOOTER H1{
         margin-right: 40%;
     }
     .texto{
-        font-size: 180%;
+        font-size: 140%;
         margin-right: 2%;
         
         

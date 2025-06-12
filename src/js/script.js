@@ -38,7 +38,7 @@ links.forEach(link => {
 
 
  
-  function alternarModo() {
+function alternarModo() {
     // Verifica se o modo escuro está ativo
     const isModoEscuro = document.body.style.backgroundColor === "rgb(50, 54, 171)"; 
 
@@ -52,7 +52,8 @@ links.forEach(link => {
         linkHoverCor: "#ff6600",
         h1Cor: "black",
         displayClaro: "block",
-        displayColorButton: "none"
+        displayColorButton: "none",
+        botaoBarrinha2Cor: "black" // Cor do botão no modo claro
     } : {
         bgCor: "#3236ab",
         textoCor: "white",
@@ -62,7 +63,8 @@ links.forEach(link => {
         linkHoverCor: "#ff6600",
         h1Cor: "orange",
         displayClaro: "none",
-        displayColorButton: "block"
+        displayColorButton: "block",
+        botaoBarrinha2Cor: "white" // Cor do botão no modo escuro
     };
 
     // Aplica as cores e estilos de acordo com o modo
@@ -82,13 +84,18 @@ links.forEach(link => {
     document.getElementById('coluna1').style.color = modo.textoCor;
     document.getElementById('navegacao').style.backgroundColor = modo.navBgCor;
 
+    // Atualiza a cor do botão botao_barrinha2
+    const botaoBarrinha2 = document.getElementById("botao_barrinha2");
+    if (botaoBarrinha2) {
+        botaoBarrinha2.style.color = modo.botaoBarrinha2Cor;
+    }
+
     // Estilos de links e h1
     document.querySelectorAll("#conteudo_footer a").forEach(link => link.style.color = modo.linkCor);
     document.querySelectorAll("h1").forEach(elemento => elemento.style.color = modo.h1Cor);
     document.querySelectorAll("#header a").forEach(link => link.style.color = modo.linkCor);
 
     // Alterna visibilidade dos botões
-    
     document.getElementById("colorButton").style.display = modo.displayColorButton;
 
     // Adiciona eventos de hover para links
@@ -104,6 +111,7 @@ links.forEach(link => {
         });
     });
 }
+
 
 window.onscroll = function() {
   let botao = document.getElementById("botaoTopo");
